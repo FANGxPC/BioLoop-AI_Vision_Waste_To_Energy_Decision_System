@@ -9,7 +9,7 @@ An intelligent web application for optimizing Waste-to-Energy (WtE) plant operat
 
 ## Key Features
 
-- **AI Waste Analysis:** Uses a YOLOv8 model to instantly identify and segment different types of waste (plastic, paper, organic, etc.) from an uploaded image.
+- **AI Waste Analysis:** Uses a YOLOv11 model to instantly identify and segment different types of waste (plastic, paper, organic, etc.) from an uploaded image.
 - **Dynamic Energy Calculation:** Calculates the Lower Heating Value (LHV) of the waste batch, providing a precise measure of its energy potential in MJ/kg.
 - **Weather-Aware Logic:** Automatically adjusts moisture content calculations based on real-time weather data (e.g., "Monsoon" vs. "Dry Season"), leading to more accurate energy yield predictions.
 - **Decision Support:** Provides clear, color-coded actions based on the final energy value:
