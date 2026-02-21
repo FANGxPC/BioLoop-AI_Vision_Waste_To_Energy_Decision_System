@@ -25,7 +25,7 @@ An intelligent web application for optimizing Waste-to-Energy (WtE) plant operat
 ## How It Works
 
 1.  **Upload Image:** The user uploads a photo of a waste batch.
-2.  **AI Segmentation:** The YOLOv8 model processes the image to determine the percentage composition of different materials.
+2.  **AI Segmentation:** The YOLOv11 model processes the image to determine the percentage composition of different materials.
 3.  **Energy Calculation:** The `energy_math` module calculates the total energy potential (LHV), factoring in the material type, composition percentage, and current weather conditions.
 4.  **Actionable Insight:** The app displays the final energy value and recommends the best processing action.
 
