@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 import plotly.express as px
 
-from src.vision_engine import get_waste_composition
+from src.vision_engine import get_waste_composition_from_results
 from src.weather_api import get_weather_context
 from src.energy_math import calculate_energy_potential
 
@@ -90,7 +90,7 @@ if uploaded_file:
         final_image = Image.fromarray(annotated_rgb)
         
         # 2. Composition Calculation
-        comp = get_waste_composition("temp_scan.jpg")
+        comp = get_waste_composition_from_results(results[0], model.names)
         
         # 3. Advanced Energy Math (Returns Tuple now)
         total_lhv, breakdown_data = calculate_energy_potential(comp, weather)
